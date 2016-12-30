@@ -1,237 +1,282 @@
 <div style="width: 1165px; margin:0px auto;">
 
-<h2>Servicios</h2>
 <style>
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+    *,
+    *:after,
+    *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
+    .clearfix:before,
+    .clearfix:after {
+      content: " ";
+      display: table;
+    }
 
-.clearfix:after {
-  clear: both;
-}
+    .clearfix:after {
+      clear: both;
+    }
 
-body {
-  font-family: sans-serif;
-  background: #f6f9fa;
-}
+    body {
+      font-family: sans-serif;
+      background: #f6f9fa;
+    }
 
-h1 {
-  color: #ccc;
-  text-align: center;
-}
+    h1 {
+      color: #ccc;
+      text-align: center;
+    }
 
-a {
-  color: #ccc;
-  text-decoration: none;
-  outline: none;
-}
+    a {
+      color: #ccc;
+      text-decoration: none;
+      outline: none;
+    }
 
-/*Fun begins*/
-.tab_container {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 70px;
-  position: relative;
-}
+    /*Fun begins*/
+    .tab_container {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 70px;
+      position: relative;
+    }
 
-input, section {
-  clear: both;
-  padding-top: 10px;
-  display: none;
-}
+    input, section {
+      clear: both;
+      padding-top: 10px;
+      display: none;
+    }
 
-.menu_top, #wrap{
-	display: block;
-}
+    .menu_top, #wrap{
+    	display: block;
+    }
 
-label {
-  font-weight: 700;
-  font-size: 18px;
-  display: block;
-  float: left;
-  width: 14.28%;
-  padding: 1.5em;
-  color: #757575;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  background: #f0f0f0;
-  height: 90px;
-}
+    label {
+      font-weight: 700;
+      font-size: 18px;
+      display: block;
+      float: left;
+      width: 14.28%;
+      padding: 1.5em;
+      color: #757575;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      background: #f0f0f0;
+      height: 90px;
+    }
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5,
-#tab6:checked ~ #content6,
-#tab7:checked ~ #content7 {
-  display: block;
-  padding: 20px;
-  background: #fff;
-  color: #999;
-  border-bottom: 2px solid #f0f0f0;
-}
+    #tab1:checked ~ #content1,
+    #tab2:checked ~ #content2,
+    #tab3:checked ~ #content3,
+    #tab4:checked ~ #content4,
+    #tab5:checked ~ #content5,
+    #tab6:checked ~ #content6,
+    #tab7:checked ~ #content7 {
+      display: block;
+      padding: 20px;
+      background: #fff;
+      color: #999;
+      border-bottom: 2px solid #f0f0f0;
+    }
 
-.tab_container .tab-content p,
-.tab_container .tab-content h3,h5 {
-  -webkit-animation: fadeInScale 0.7s ease-in-out;
-  -moz-animation: fadeInScale 0.7s ease-in-out;
-  animation: fadeInScale 0.7s ease-in-out;
-}
-.tab_container .tab-content img {
-  -webkit-animation: fadeInScale 0.7s ease-in-out;
-  -moz-animation: fadeInScale 0.7s ease-in-out;
-  animation: fadeInScale 0.7s ease-in-out;
-}
-.tab_container .tab-content h3  {
-  text-align: center;
-}
+    .tab_container .tab-content p,
+    .tab_container .tab-content h3,h5 {
+      -webkit-animation: fadeInScale 0.7s ease-in-out;
+      -moz-animation: fadeInScale 0.7s ease-in-out;
+      animation: fadeInScale 0.7s ease-in-out;
+    }
+    .tab_container .tab-content img {
+      -webkit-animation: fadeInScale 0.7s ease-in-out;
+      -moz-animation: fadeInScale 0.7s ease-in-out;
+      animation: fadeInScale 0.7s ease-in-out;
+    }
+    .tab_container .tab-content h3  {
+      text-align: center;
+    }
 
-.tab_container [id^="tab"]:checked + label {
-    background: rgb(221, 17, 17);
-    box-shadow: inset 0 3px rgb(210, 210, 210);
-    color: #fff;
-}
+    .tab_container [id^="tab"]:checked + label {
+        background: rgb(221, 17, 17);
+        box-shadow: inset 0 3px rgb(210, 210, 210);
+        color: #fff;
+    }
 
-.tab_container [id^="tab"]:checked + label .fa {
-  color: #FFFFFF;
-}
+    .tab_container [id^="tab"]:checked + label .fa {
+      color: #FFFFFF;
+    }
 
-label .fa {
-  font-size: 1.3em;
-  margin: 0 0.4em 0 0;
-}
+    label .fa {
+      font-size: 1.3em;
+      margin: 0 0.4em 0 0;
+    }
 
-/*Media query*/
-@media only screen and (max-width: 900px) {
-  label span {
-    display: none;
-  }
+    /*Media query*/
+    @media only screen and (max-width: 900px) {
+      label span {
+        display: none;
+      }
 
-  .tab_container {
-    width: 98%;
-  }
-}
+      .tab_container {
+        width: 98%;
+      }
+    }
 
-/*Content Animation*/
-@keyframes fadeInScale {
-  0% {
-    transform: scale(0.9);
-    opacity: 0;
-  }
+    /*Content Animation*/
+    @keyframes fadeInScale {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
 
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
 
-.no_wrap {
-  text-align:center;
-  color: #0ce;
-}
-.link {
-  text-align:center;
-}
+    .no_wrap {
+      text-align:center;
+      color: #0ce;
+    }
+    .link {
+      text-align:center;
+    }
 
-.ult_tabitemname img {
-    width: 100%;
-}
+    .ult_tabitemname img {
+        width: 100%;
+    }
 
-h5 {
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #000;
-}
+    h5 {
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #000;
+    }
 
-h2{
-	margin-top: 20px;
-	margin-bottom: -66px;
-}
+    h2{
+    	margin-top: 20px;
+    	margin-bottom: -66px;
+    }
   </style>
 
     <div class="tab_container">
+    <!-- Tabs-->
       <input id="tab1" name="tabs" checked="" type="radio">
-      <label for="tab1"><i class="fa "></i><span>Architects Designers</span></label>
+      <label for="tab1">
+        <i class="fa ">
+
+        </i>
+        <span>Architects Designers</span>
+      </label>
 
       <input id="tab2" name="tabs" type="radio">
-      <label for="tab2"><i class="fa "></i><span>Custom Builders</span></label>
+      <label for="tab2">
+        <i class="fa ">
+
+        </i>
+        <span>Custom Builders</span>
+      </label>
 
       <input id="tab3" name="tabs" type="radio">
-      <label for="tab3"><i class="fa "></i><span>Homeowner Consultants</span></label>
+      <label for="tab3">
+        <i class="fa ">
+
+        </i>
+        <span>Homeowner Consultants</span>
+      </label>
 
       <input id="tab4" name="tabs" type="radio">
-      <label for="tab4"><i class="fa "></i><span>International Customers</span></label>
+      <label for="tab4">
+        <i class="fa ">
+
+        </i>
+        <span>International Customers</span>
+      </label>
 
       <input id="tab5" name="tabs" type="radio">
-      <label for="tab5"><i class="fa "></i><span>Realtor program</span></label>
+      <label for="tab5">
+        <i class="fa ">
+
+        </i>
+        <span>Realtor program</span>
+      </label>
 
       <input id="tab6" name="tabs" type="radio">
-      <label for="tab6"><i class="fa "></i><span>Customers Support</span></label>
+      <label for="tab6">
+        <i class="fa ">
+
+        </i>
+        <span>Customers Support</span>
+      </label>
 
       <input id="tab7" name="tabs" type="radio">
-      <label for="tab7"><i class="fa f"></i><span>Partners</span></label>
+      <label for="tab7">
+        <i class="fa f">
+
+        </i>
+        <span>Partners</span>
+      </label>
+    <!-- /Tabs-->
+
+    <!--Architects Designers-->
 
       <section id="content1" class="tab-content">
-       <div class="ult_tabitemname ult_active_tabnme" style="display: block; left: 0px;">
-        <div style="width:1300;" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="310" data-marginoffset="" data-isdisplayall=""><img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/slid11.jpg"><div class="cq-hotspots"><div class="hotspot-item pulse-red " style="top:30%;left:11%;" data-top="30%" data-left="11%"><a href="#" class="cq-tooltip tooltipstered" style="background:rgba(204,0,0,0.8);" data-tooltip="
-<p style=&quot;text-align: center;&quot;><strong><span class=&quot;tx&quot;>Horizontal Flush Alignment</span></strong></p>
-<p style=&quot;text-align: center;&quot;><span class=&quot;tx&quot;>Bosch designers believe that form must </span><span class=&quot;tx&quot;>always be&nbsp;balanced with&nbsp;function. Wall </span><span class=&quot;tx&quot;>ovens are designed for&nbsp;flush installation </span><span class=&quot;tx&quot;>which provides a sleek, sophisticated </span><span class=&quot;tx&quot;>appearance. </span><br />
-<span class=&quot;tx&quot;>Horizontal installation&nbsp;provides a </span><span class=&quot;tx&quot;>distinctive&nbsp;European&nbsp;look and offers you a </span><span class=&quot;tx&quot;>better ergonomic access for&nbsp;ease of use</span></p>
-<p>" data-arrowposition=""><span style="background:#ffffff;"></span></a></div><div class="hotspot-item pulse-red " style="top:30%;left:24%;" data-top="30%" data-left="24%"><a href="#" class="cq-tooltip tooltipstered" style="background:rgba(204,0,0,0.8);" data-tooltip="
-<iframe src=&quot;https://www.youtube.com/embed/w17v8AqKO9s&quot; width=&quot;100%&quot; height=&quot;200&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;allowfullscreen&quot;></iframe>" data-arrowposition="top"><span style="background:#ffffff;"></span></a></div><div class="hotspot-item pulse-red " style="top:51%;left:71%;" data-top="51%" data-left="71%"><a href="#" class="cq-tooltip tooltipstered" style="background:rgba(204,0,0,0.8);" data-tooltip="
-<p style=&quot;text-align: center;&quot;><strong><span class=&quot;tx&quot;>Kitchen essentials</span></strong></p>
-<p style=&quot;text-align: center;&quot;><span class=&quot;tx&quot;>Our Kitchen essentials collection is </span><span class=&quot;tx&quot;>manufactured to&nbsp;the&nbsp;highest&nbsp;quality, best </span><span class=&quot;tx&quot;>design and perfect&nbsp;function. </span><span class=&quot;tx&quot;>We&nbsp;represent&nbsp;brands such&nbsp;as&nbsp;Cilio, De&nbsp;Buyer, </span><span class=&quot;tx&quot;>Global, Jura,&nbsp;Kuchenprofi, Laguioleen </span><span class=&quot;tx&quot;>Aubrac and Rosle. </span><span class=&quot;tx&quot;>Designed for&nbsp;optimum performance, </span><span class=&quot;tx&quot;>appearance&nbsp;and comfort;&nbsp;our products for </span><span class=&quot;tx&quot;>the professional chef&nbsp;and home cook will </span><span class=&quot;tx&quot;>always&nbsp;bring pleasure to food preparation</span>." data-arrowposition="top"><span style="background:#ffffff;"></span></a></div><div class="hotspot-item pulse-red " style="top:40%;left:82%;" data-top="40%" data-left="82%"><a href="#" class="cq-tooltip tooltipstered" style="background:rgba(204,0,0,0.8);" data-tooltip="
-<p style=&quot;text-align: center;&quot;><strong><span class=&quot;tx&quot;>DownDraft Ventilation</span></strong></p>
-<p style=&quot;text-align: center;&quot;><span class=&quot;tx&quot;>If&nbsp;you prefer&nbsp;a concealed look, choose a </span><span class=&quot;tx&quot;>downdraft Ventilation Unit, which offers </span><span class=&quot;tx&quot;>space efficiency when a hood is not </span><span class=&quot;tx&quot;>preferred.&nbsp;The full-face filter combines a </span><span class=&quot;tx&quot;>filter with a splatter shield in one easy-to-</span><span class=&quot;tx&quot;>remove, dishwasher-safe element. </span><span class=&amp;<q></q>uot;tx&quot;>Discover the retractable&nbsp;downdraft with a </span><span class=&quot;tx&quot;>recirculation option &amp;#8211;&nbsp;making&nbsp;ventilation </span><span class=&quot;tx&quot;>possible in any kitchen.</span></p>
-<p>" data-arrowposition="top"><span style="background:#ffffff;"></span></a></div></div></div>
-  <div class="wpb_text_column wpb_content_element  vc_custom_1437064351627">
-    <div class="wpb_wrapper">
-      <h5 style="text-align: center; padding: 10px;">Architects and Designers</h5>
-<div style="text-align: justify;" data-canvas-width="132.26503529411764"><p>Are you an architect and/or interior designer and are tired of worrying if you have all the right kitchen appliance specifications or are specifying the latest appliances for your customer or client? Let La Cuisine Appliances handle that responsibility for you by providing our recommendations on product selection and matching your building specifications with the product ordered.<br>
-Our experience working with the architectural and design teams of over 100 of the most prestigious home developments has been invaluable.<br>
-We take the time to understand the architectural and design team’s specific needs, working closely with them to make sure every detail is covered.</p></div>
-
-    </div>
-  </div>
-      </div>
+        <div class="ult_tabitemname ult_active_tabnme" style="display: block; left: 0px;">
+          <div style="width:1300;" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="310" data-marginoffset="" data-isdisplayall="">
+            <img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/slid11.jpg">
+          </div>
+          <div class="wpb_text_column wpb_content_element  vc_custom_1437064351627">
+            <div class="wpb_wrapper">
+              <h5 style="text-align: center; padding: 10px;">Architects and Designers</h5>
+              <div style="text-align: justify;" data-canvas-width="132.26503529411764">
+                <p>
+                  Are you an architect and/or interior designer and are tired of worrying if you have all the right kitchen appliance specifications or are specifying the latest appliances for your customer or client? Let La Cuisine Appliances handle that responsibility for you by providing our recommendations on product selection and matching your building specifications with the product ordered.<br>
+                  Our experience working with the architectural and design teams of over 100 of the most prestigious home developments has been invaluable.<br>
+                  We take the time to understand the architectural and design team’s specific needs, working closely with them to make sure every detail is covered.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+    <!--/Architects Designers-->
+
+    <!--Custom Builders-->
 
       <section id="content2" class="tab-content">
         <div class="ult_tabitemname ult_active_tabnme" style="left: 0px; display: block;">
-        <div style="width:;" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="300" data-marginoffset="" data-isdisplayall=""><img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/custom-b3.jpg"><div class="cq-hotspots"><div class="hotspot-item pulse-red " style="top:50%;left:12%;" data-top="50%" data-left="12%"><a href="#" class="cq-tooltip tooltipstered" style="background:rgba(204,0,0,0.8);" data-tooltip="
-<p><img class=&quot;alignnone size-full wp-image-2463&quot; src=&quot;http://lacuisineappliances.com/us/wp-content/uploads/2015/07/customb.jpg&quot; alt=&quot;customb&quot; width=&quot;320&quot; height=&quot;186&quot; />" data-arrowposition=""><span style="background:#ffffff;"></span></a></div><div class="hotspot-item pulse-red " style="top:50%;left:50%;" data-top="50%" data-left="50%"><a href="#" class="cq-tooltip tooltipstered" style="background:rgba(204,0,0,0.8);" data-tooltip="
-<p><a href=&quot;http://lacuisineappliances.com/us/wp-content/uploads/2015/07/thermador.jpg&quot;><img class=&quot;alignnone size-full wp-image-1923&quot; src=&quot;http://jlvbusiness.com/appliances/wp-content/uploads/2015/07/thermador.jpg&quot; alt=&quot;thermador&quot; width=&quot;300&quot; height=&quot;200&quot; /></a>" data-arrowposition="top"><span style="background:#ffffff;"></span></a></div><div class="hotspot-item pulse-red " style="top:50%;left:80%;" data-top="50%" data-left="80%"><a href="#" class="cq-tooltip tooltipstered" style="background:rgba(204,0,0,0.8);" data-tooltip="
-<p><a href=&quot;http://lacuisineappliances.com/us/wp-content/uploads/2015/07/Gaggenau.png&quot;><img class=&quot;alignnone size-full wp-image-1925&quot; src=&quot;http://jlvbusiness.com/appliances/wp-content/uploads/2015/07/Gaggenau.png&quot; alt=&quot;Gaggenau&quot; width=&quot;300&quot; height=&quot;200&quot; /></a>" data-arrowposition="top"><span style="background:#ffffff;"></span></a></div></div></div>
-  <div class="wpb_text_column wpb_content_element  vc_custom_1437062721031 wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
-    <div class="wpb_wrapper">
-      <h5 style="text-align: center; padding: 10px;">Custom Builders</h5>
-<p style="text-align: justify;">Our company has decades of experience in kitchen customizations and projects for homes and boutique hotels. Our comprehensive project package includes understanding your architectural and design team’s specific needs and working closely with them to ensure a perfect harmony in form and function.<br>
-We help design the layout taking into consideration the size and select the most suitable appliances for specific needs. We know the intricacies of construction, the precise requirements of building inspections, and exactly what’s involved in the delivery and installation process. We work closely with your schedule and timeline, always delivering on-time and within budget.</p>
+          <div style="width:;" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="300" data-marginoffset="" data-isdisplayall="">
+            <img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/custom-b3.jpg">
+          </div>
+          <div class="wpb_text_column wpb_content_element  vc_custom_1437062721031 wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
+            <div class="wpb_wrapper">
+              <h5 style="text-align: center; padding: 10px;">Custom Builders</h5>
+              <p style="text-align: justify;">
+                Our company has decades of experience in kitchen customizations and projects for homes and boutique hotels. Our comprehensive project package includes understanding your architectural and design team’s specific needs and working closely with them to ensure a perfect harmony in form and function.<br>
+                We help design the layout taking into consideration the size and select the most suitable appliances for specific needs. We know the intricacies of construction, the precise requirements of building inspections, and exactly what’s involved in the delivery and installation process. We work closely with your schedule and timeline, always delivering on-time and within budget.
+              </p>
+            </div>
+          </div>
+          <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_white">
+            <span class="vc_sep_holder vc_sep_holder_l">
+              <span class="vc_sep_line">
 
-    </div>
-  </div> <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_white">
-  <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span>
-    <span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
-</div>
+              </span>
+            </span>
+            <span class="vc_sep_holder vc_sep_holder_r">
+              <span class="vc_sep_line">
 
-
-      </div>
+              </span>
+            </span>
+          </div>
+        </div>
       </section>
+    <!--/Custom Builders-->
 
       <section id="content3" class="tab-content">
         <div class="ult_tabitemname ult_active_tabnme" style="left: 0px; display: block;">
