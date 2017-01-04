@@ -2,6 +2,7 @@
 
 <style>
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+    @import url('/lcaicons/lcaicons.css');
 
     *,
     *:after,
@@ -61,13 +62,17 @@
       display: block;
       float: left;
       width: 14.28%;
-      padding: 1.5em;
+      /*padding: 1.5em;*/
+      padding-top: 1em;
+      position: relative;
       color: #757575;
       cursor: pointer;
       text-decoration: none;
       text-align: center;
       background: #f0f0f0;
       height: 90px;
+      border-radius: 100px/7px;
+      transition: 1s;
     }
 
     #tab1:checked ~ #content1,
@@ -161,64 +166,149 @@
     	margin-top: 20px;
     	margin-bottom: -66px;
     }
+    /*Icon-Tabs*/
+    [class^="lcaicons-"], [class*=" lcaicons-"] {
+        font-family: 'lcaicons';
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+      }
+      .ult_tabmenu > li.ult_tab_li .ult_tab_icon, .ult_tabmenu > li.ult_tab_li span.ult-span-text {
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+      }
+      .icon-top {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 45px;
+      }
+      .ult-span-text {
+        font-size: 13px;
+        font-weight: normal;
+      }
+      .tab-service::before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        box-shadow: 0 9px 7px -5px rgba(0,0,0,.5);
+        top: 0;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        border-radius: 100px/7px;
+      }
+      label:hover {
+        background-color: rgb(221, 17, 17);
+      }
+      label:hover span{
+        color: #fff;
+      }
+      /*Contenedor*/
+      /*.cqtooltip-wrapper {
+        display: inline;
+      }*/
+
   </style>
 
     <div class="tab_container">
     <!-- Tabs-->
       <input id="tab1" name="tabs" checked="" type="radio">
       <label for="tab1">
-        <i class="fa ">
+        <div class="tab-service">
+          <span class="icon-top">
+            <i class="lcaicons-lca-architect ult_tab_icon"></i>
+          </span>
+          <span class="ult-span-text ult-responsive">Architects Designers</span>
+        </div>
 
-        </i>
-        <span>Architects Designers</span>
       </label>
 
       <input id="tab2" name="tabs" type="radio">
       <label for="tab2">
-        <i class="fa ">
+        <div class="tab-service">
+          <span class="icon-top">
+            <i class="lcaicons-lca-builders ult_tab_icon">
 
-        </i>
-        <span>Custom Builders</span>
+            </i>
+          </span>
+
+          <span class="ult-span-text ult-responsive">Custom Builders</span>
+        </div>
+
       </label>
 
       <input id="tab3" name="tabs" type="radio">
       <label for="tab3">
-        <i class="fa ">
+        <div class="tab-service">
+          <span class="icon-top">
+            <i class="lcaicons-lca-home ult_tab_icon">
 
-        </i>
-        <span>Homeowner Consultants</span>
+            </i>
+          </span>
+
+          <span class="ult-span-text ult-responsive">Homeowner Consultants</span>
+        </div>
+
       </label>
 
       <input id="tab4" name="tabs" type="radio">
       <label for="tab4">
-        <i class="fa ">
+        <div class="tab-service">
+          <span class="icon-top">
+            <i class="lcaicons-lca-international ult_tab_icon">
 
-        </i>
-        <span>International Customers</span>
+            </i>
+          </span>
+
+          <span class="ult-span-text ult-responsive">International Customers</span>
+        </div>
+
       </label>
 
       <input id="tab5" name="tabs" type="radio">
       <label for="tab5">
-        <i class="fa ">
+        <div class="tab-service">
+          <span class="icon-top">
+            <i class="lcaicons-lca-realtor ult_tab_icon">
 
-        </i>
-        <span>Realtor program</span>
+            </i>
+          </span>
+
+          <span class="ult-span-text ult-responsive">Realtor program</span>
+        </div>
+
       </label>
 
       <input id="tab6" name="tabs" type="radio">
       <label for="tab6">
-        <i class="fa ">
+        <div class="tab-service">
+          <span class="icon-top">
+            <i class="lcaicons-lca-support ult_tab_icon">
 
-        </i>
-        <span>Customers Support</span>
+            </i>
+          </span>
+
+          <span class="ult-span-text ult-responsive">Customers Support</span>
+        </div>
+
       </label>
 
       <input id="tab7" name="tabs" type="radio">
       <label for="tab7">
-        <i class="fa f">
+        <div class="tab-service">
+          <span class="icon-top">
+            <i class="lcaicons-lca-partners ult_tab_icon">
 
-        </i>
-        <span>Partners</span>
+            </i>
+          </span>
+
+          <span class="ult-span-text ult-responsive">Partners</span>
+        </div>
+
       </label>
     <!-- /Tabs-->
 
@@ -226,7 +316,7 @@
 
       <section id="content1" class="tab-content">
         <div class="ult_tabitemname ult_active_tabnme" style="display: block; left: 0px;">
-          <div style="width:1300;" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="310" data-marginoffset="" data-isdisplayall="">
+          <div style="" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="310" data-marginoffset="" data-isdisplayall="">
             <img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/slid11.jpg">
           </div>
           <div class="wpb_text_column wpb_content_element  vc_custom_1437064351627">
