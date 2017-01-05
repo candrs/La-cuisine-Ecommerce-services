@@ -251,6 +251,30 @@ img {
   left: 82%;
   top: 41%;
 }
+.hotspots .hotspot-item.hotspot-item-5 {
+  left: 15%;
+  top: 50%;
+}
+.hotspots .hotspot-item.hotspot-item-6 {
+  left: 50%;
+  top: 50%;
+}
+.hotspots .hotspot-item.hotspot-item-7 {
+  left: 82%;
+  top: 50%;
+}
+.hotspots .hotspot-item.hotspot-item-8 {
+  left: 62%;
+  top: 50%;
+}
+.tooltipster-noir {
+	border-radius: 0;
+  border: 0;
+	border-bottom:3px solid;
+  border-color: red;
+	background: #fff;
+	color: #2c2c2c;
+}
 .hotspots .hotspot-item a {
   width: 32px;
   height: 32px;
@@ -292,6 +316,17 @@ img {
 }
 .tool1 h6{
   font-size: 1em;
+}
+.tool1 img{
+  margin-bottom: 10px;
+}
+.bnt-tooltip{
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  margin-top:20px;
+  padding: 5px;
+  font-weight: 600;
 }
   </style>
 
@@ -411,12 +446,12 @@ img {
                 </a>
               </div>
               <div class="hotspot-item hotspot-item-3">
-                <a href="#" class="hotspot-red tooltip-2 tooltipstered">
+                <a href="#" class="hotspot-red tooltip-3 tooltipstered">
                   <span></span>
                 </a>
               </div>
               <div class="hotspot-item hotspot-item-4">
-                <a href="#" class="hotspot-red tooltip-2 tooltipstered">
+                <a href="#" class="hotspot-red tooltip-4 tooltipstered">
                   <span></span>
                 </a>
               </div>
@@ -443,8 +478,25 @@ img {
 
       <section id="content2" class="tab-content">
         <div class="ult_tabitemname ult_active_tabnme" style="left: 0px; display: block;">
-          <div style="width:;" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="300" data-marginoffset="" data-isdisplayall="">
+          <div class="wrapper">
             <img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/custom-b3.jpg">
+            <div class="hotspots">
+              <div class="hotspot-item hotspot-item-5">
+                <a href="#" class="hotspot-red tooltip-5 tooltipstered">
+                  <span></span>
+                </a>
+              </div>
+              <div class="hotspot-item hotspot-item-6">
+                <a href="#" class="hotspot-red tooltip-6 tooltipstered">
+                  <span></span>
+                </a>
+              </div>
+              <div class="hotspot-item hotspot-item-7">
+                <a href="#" class="hotspot-red tooltip-7 tooltipstered">
+                  <span></span>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="wpb_text_column wpb_content_element  vc_custom_1437062721031 wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
             <div class="wpb_wrapper">
@@ -525,9 +577,19 @@ img {
 
       <section id="content5" class="tab-content">
         <div class="ult_tabitemname ult_active_tabnme" style="left: 0px; display: block;">
-          <div style="width:;" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="540" data-marginoffset="" data-isdisplayall="">
+          <div class="wrapper">
             <img src="http://lacuisineappliances.com/us/wp-content/uploads/2014/11/realtor.jpg">
+            <div class="hotspots">
+              <div class="hotspot-item hotspot-item-8">
+                <a href="#" class="hotspot-red tooltip-8 tooltipstered">
+                  <span></span>
+                </a>
+              </div>
+            </div>
           </div>
+          <!-- <div style="width:;" class="cqtooltip-wrapper " data-opacity="1" data-tooltipanimation="grow" data-tooltipstyle="punk" data-trigger="hover" data-maxwidth="540" data-marginoffset="" data-isdisplayall="">
+            <img src="http://lacuisineappliances.com/us/wp-content/uploads/2014/11/realtor.jpg">
+          </div> -->
           <div class="wpb_text_column wpb_content_element  vc_custom_1439412457410">
             <div class="wpb_wrapper">
               <h5 style="text-align: center; padding: 10px;">Realtors Referral Program – A great way for you to earn more money</h5>
@@ -1446,24 +1508,69 @@ img {
             interactive: true
         });
         $('.tooltip-2').tooltipster({
-            content: $('<iframe width="640" height="360" src="//www.youtube.com/embed/w17v8AqKO9s?rel=0" frameborder="0" allowfullscreen></iframe>'),
+            content: $('<iframe width="320" height="180" src="//www.youtube.com/embed/w17v8AqKO9s?rel=0" frameborder="0" allowfullscreen></iframe>'),
             animation: 'grow',
-            fixedWidth: 300,
-            position: 'left',
+            fixedWidth: 200,
+            position: 'top',
             theme: 'tooltipster-noir',
             interactive: true
         });
         $('.tooltip-3').tooltipster({
-            content: $('<iframe width="640" height="360" src="//www.youtube.com/embed/7RbqDgjeaGk?rel=0" frameborder="0" allowfullscreen></iframe>'),
-            delay: 100,
-            maxWidth: 500,
-            speed: 300,
-            interactive: true,
+            content: $('<div class="tool1"><h6>Kitchen essentials</h6><p>Our Kitchen essentials collection is manufactured to the highest quality, best design and perfect function. We represent brands such as Cilio, De Buyer, Global, Jura, Kuchenprofi, Laguioleen Aubrac and Rosle. Designed for optimum performance, appearance and comfort; our products for the professional chef and home cook will always bring pleasure to food preparation.</p></div>'),
             animation: 'grow',
-            theme: 'tooltipster-noir'
+            fixedWidth: 300,
+            maxWidth: 300,
+            position: 'top',
+            theme: 'tooltipster-noir',
+            interactive: true
+        });
+        $('.tooltip-4').tooltipster({
+            content: $('<div class="tool1"><h6>DownDraft Ventilation</h6><p>If you prefer a concealed look, choose a downdraft Ventilation Unit, which offers space efficiency when a hood is not preferred. The full-face filter combines a filter with a splatter shield in one easy-to-remove, dishwasher-safe element. Discover the retractable downdraft with a recirculation option – making ventilation possible in any kitchen.</p></div>'),
+            animation: 'grow',
+            fixedWidth: 300,
+            maxWidth: 300,
+            position: 'top',
+            theme: 'tooltipster-noir',
+            interactive: true
+        });
+        $('.tooltip-5').tooltipster({
+            content: $('<div class="tool1"><img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/customb.jpg"></div>'),
+            animation: 'grow',
+            fixedWidth: 300,
+            maxWidth: 300,
+            position: 'top',
+            theme: 'tooltipster-noir',
+            interactive: true
+        });
+        $('.tooltip-6').tooltipster({
+            content: $('<div class="tool1"><img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/thermador.jpg"></div>'),
+            animation: 'grow',
+            fixedWidth: 300,
+            maxWidth: 300,
+            position: 'top',
+            theme: 'tooltipster-noir',
+            interactive: true
+        });
+        $('.tooltip-7').tooltipster({
+            content: $('<div class="tool1"><img src="http://lacuisineappliances.com/us/wp-content/uploads/2015/07/Gaggenau.png"></div>'),
+            animation: 'grow',
+            fixedWidth: 300,
+            maxWidth: 300,
+            position: 'top',
+            theme: 'tooltipster-noir',
+            interactive: true
+        });
+        $('.tooltip-8').tooltipster({
+            content: $('<div class="tool1"><img src="http://lacuisineappliances.com/us/wp-content/uploads/2014/11/LCA-Realtors.jpg"><a href="#" class="bnt-tooltip">Download</a></div>'),
+            animation: 'grow',
+            fixedWidth: 500,
+            maxWidth: 500,
+            position: 'left',
+            theme: 'tooltipster-noir',
+            interactive: true
         });
     });
     //# sourceURL=pen.js
     </script>
 
-  </div>
+  </div><p></p>
