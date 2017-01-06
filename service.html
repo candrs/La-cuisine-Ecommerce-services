@@ -3,7 +3,7 @@
 
 <style>
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-    @import url('lcaicons/lcaicons.css');
+    @import url('https://www.dropbox.com/s/jhik220aangtb9n/lcaicons.css');
 
     *,
     *:after,
@@ -415,6 +415,187 @@ img {
 }
 .banner-style12:hover .mask {
     opacity: 1;
+}
+/*Popup - Partners*/
+
+/* popup styles */
+.popup {
+  display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.popup-overlay {
+	background: rgba(255,255,255,0.9);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.popup-content {
+	position: relative;
+  background: #fff;
+	width: 800px;
+	margin: 0 auto;
+	/*left: 17%;*/
+	top: 30%;
+	z-index: 11;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.close-popup {
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  right: 5px;
+  font-size: 42px;
+}
+
+/* Animations */
+.fadeIn {
+  animation: fadeIn 0.5s ease-in both;
+  -webkit-animation: fadeIn 0.5s ease-in both;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-out both;
+  -webkit-animation: fadeOut 0.5s ease-out both;
+}
+@keyframes fadeOut {
+  to { opacity: 0; }
+}
+@-webkit-keyframes fadeOut {
+  to { opacity: 0; }
+}
+
+.scaleIn {
+  animation: scaleIn 0.5s ease-in both;
+  -webkit-animation: scaleIn 0.5s ease-in both;
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.5); }
+}
+@-webkit-keyframes scaleIn {
+  from { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+.scaleOut {
+  animation: scaleOut 0.5s ease-out both;
+  -webkit-animation: scaleOut 0.5s ease-out both;
+}
+@keyframes scaleOut {
+  to { opacity: 0; transform: scale(0.5); }
+}
+@-webkit-keyframes scaleOut {
+  to { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+.scaleUpIn {
+  animation: scaleIn 0.5s ease-in both;
+  -webkit-animation: scaleIn 0.5s ease-in both;
+}
+.scaleUpOut {
+  animation: scaleUpOut 0.5s ease-in both;
+  -webkit-animation: scaleUpOut 0.5s ease-in both;
+}
+@keyframes scaleUpOut {
+  to { opacity: 0; transform: scale(1.2); }
+}
+@-webkit-keyframes scaleUpOut {
+  to { opacity: 0; -webkit-transform: scale(1.2); }
+}
+
+.scaleDownIn {
+  animation: scaleDownIn 0.5s ease-in both;
+  -webkit-animation: scaleDownIn 0.5s ease-in both;
+}
+.scaleDownOut {
+  animation: scaleOut 0.5s ease-in both;
+  -webkit-animation: scaleOut 0.5s ease-in both;
+}
+@keyframes scaleDownIn {
+  from { opacity: 0; transform: scale(1.2); }
+}
+@-webkit-keyframes scaleDownIn {
+  from { opacity: 0; -webkit-transform: scale(1.2); }
+}
+
+.slideIn {
+  animation: slideIn 0.5s ease-in both;
+  -webkit-animation: slideIn 0.5s ease-in both;
+}
+
+
+/* Demo Styles */
+.btn {
+  background: #fff;
+  color: #ccc;
+  border-radius: 5px;
+  border: 1px solid;
+  display: inline-block;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.btn:hover {
+  background: #fff;
+  color: #ddd;
+}
+.popup {
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+}
+.popup-content {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.title-pop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(255, 255 , 255, 0.9);
+    padding-top: 25%;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.5s;
+    color: #333;
+}
+.btn:hover .title-pop{
+  opacity: 1;
+}
+.cont-popup{
+  display: flex;
+}
+.title-cont-popup{
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+}
+.img-cont {
+    margin: 5px;
 }
   </style>
 
@@ -835,6 +1016,31 @@ img {
               <p style="text-align: center; font-size: 20px; color: #c00; padding-top: 15px;"><strong>DEVELOPERS</strong></p>
             </div>
           </div>
+<a href="#" class="btn open-popup" data-id="popup_2" data-animation="scale"><img src="//lacuisineappliances.com/us/wp-content/uploads/ewpt_cache/183x0_100_1_c_FFFFFF_02c96df42c649db83cd49225999946ce.jpg" alt=""><h6 class="title-pop">Fendi Chateau</h6></a>
+
+
+<div id="popup_2" class="popup">
+  <div class="popup-overlay"></div>
+  <div class="popup-content">
+    <a href="#" class="close-popup" data-id="popup_2" data-animation="scale">&times;</a>
+    <h2 class="title-cont-popup">Fendi Chateau</h2>
+    <div class="cont-popup">
+      <div class="img-cont">
+<img class="alignleft wp-image-1583 size-full" src="http://lacuisineappliances.com/us/wp-content/uploads/2015/06/chateau1.jpg" alt="chateau1" height="347" width="600">      </div>
+      <div class="text-cont">
+        <p>Fendi Chateau<br>
+• Developer: Chateau Group<br>
+• Architect/Designer: Arquitectonica<br>
+• GC: Coastal Construction<br>
+• Brand: Gaggenau<br>
+• Scope: 58 condominiums</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
           <div class="wpb_text_column wpb_content_element  partners">
             <div class="wpb_wrapper">
               <p style="text-align: center;">
@@ -1657,8 +1863,51 @@ img {
             theme: 'tooltipster-noir',
             interactive: true
         });
+        // jQuery extend functions for popup
+(function($) {
+  $.fn.openPopup = function( settings ) {
+    var elem = $(this);
+    // Establish our default settings
+    var settings = $.extend({
+      anim: 'fade'
+    }, settings);
+    elem.show();
+    elem.find('.popup-content').addClass(settings.anim+'In');
+  }
+
+  $.fn.closePopup = function( settings ) {
+    var elem = $(this);
+    // Establish our default settings
+    var settings = $.extend({
+      anim: 'fade'
+    }, settings);
+    elem.find('.popup-content').removeClass(settings.anim+'In').addClass(settings.anim+'Out');
+
+    setTimeout(function(){
+        elem.hide();
+        elem.find('.popup-content').removeClass(settings.anim+'Out')
+      }, 500);
+  }
+
+}(jQuery));
+
+// Click functions for popup
+$('.open-popup').click(function(){
+  $('#'+$(this).data('id')).openPopup({
+    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
+  });
+});
+$('.close-popup').click(function(){
+  $('#'+$(this).data('id')).closePopup({
+    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
+  });
+});
+
+// To open/close the popup at any functions call the below
+// $('#popup_default').openPopup();
+// $('#popup_default').closePopup();
     });
     //# sourceURL=pen.js
     </script>
 
-  </div><p></p>
+  </div>
